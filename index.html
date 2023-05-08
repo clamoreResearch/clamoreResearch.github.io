@@ -9,5 +9,17 @@
 <body>
     <h1>Hello World!</h1>
     <p>we are hosted by <b>GitHub Pages!</b></p>
+    <div id="count">
+
+    </div>
+    <script>
+        let counter = 0;
+        function countup(){
+            counter +=1;
+            console.log(counter);
+            document.getElementById("count").innerHTML = counter;
+        }
+        setInterval(counter,2000);
+    </script>
 </body>
 </html>
